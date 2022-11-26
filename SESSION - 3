@@ -1,0 +1,115 @@
+1.Using which languages we can develop Spring Boot Applications?
+
+Ans : 
+	1.Java
+	2.Groovy
+	3.Kotlin
+
+	The above languages are JVM Based Languages
+
+2.Mention the Biggest Limitation of Spring Boot?	
+
+Ans : To Migrate Spring Projects into Spring Boot Projects is very tough and Large Time Consuming
+      Process.
+
+3.Are Spring Boot Project best for Brown Field Projects and Green Field Projects?
+
+Ans : Spring Boot Projects are best for Green Field Projects.
+
+4.What do you mean Brown Field Projects and Green Field Projects
+
+Ans : Brown Field Projects --> Project Enhancement and Project Migration
+   
+      Greeen Field Projects --> New Projects
+
+5.What are the different approaches of Developing Spring Boot Projects?
+
+Ans : 
+	1.Using Spring Boot CLI Tool
+
+	2.Using Spring STS IDE
+
+	3.Using Spring Initalizer (website : http://start.spring.io/ )
+
+	4.By Configuring STS Plugin in Eclipse IDE
+
+6.While Using an Approach to Develop Spring Boot Projects,do we need Build Tools?
+
+Ans : Yes we need Build Tools like Maven,Gradle and Internet Connection is also required to 
+      develop projects
+
+7.What are the Spring Boot Components?
+
+Ans :
+	1.Auto Configure
+	2.Core
+	3.CLI
+	4.Actuators
+	5.Starters
+	6.Tools
+
+8.Mention the Process of Developing Spring Boot Application?
+
+	Step - 1 : Choose an Approach To Develop Spring Boot Application
+
+	Step - 2 : Choose the Build Tool to Develop Spring Boot Application
+
+	Step - 3 : Mention the Spring Boot Starters
+
+	Step - 4 : Code 
+
+	Step - 5 : Run the Application using Embedded Tomcat Server
+
+9.What do you mean by Stereotype Annotations?
+
+Ans : Stereotype Annotations are used to configure java class as Spring Bean i.e it creates
+      object for the class internally and configure it as Spring Bean.
+
+10.Mention Some of the Stereotype Annotations?
+
+Ans : 
+	1. @Component 
+	2. @Controller
+	3. @Service
+	4. @Repository and etc...
+
+11.How do you perform Field(Variable) level injection?
+
+Ans : Using @Autowired Annotation
+
+12.What is @SpringBootApplication Annotation?
+
+Ans : If we mention @SpringBootApplication Annotation for a class then the Class becomes
+      Configuration Class [alternate Spring bean config file[xml]] for the Spring Boot 
+      Application.
+
+13.Does @SpringBootApplication Annotation internally uses any other Annotations?
+
+Ans : Yes.It uses
+
+		1. @Configuration (To Make Java Class as Configuration Class)
+
+		2. @ComponentScan (To Recognize Current and Child Packages holding
+		   Stereotype Annotation)
+
+		3. @EnableAutoConfiguration (To enable AutoConfiguration)
+
+14.What is @Bean Annotation?
+
+Ans : @Bean Annotation is mentioned on top of methods which returns Predefined Class.Hence it
+      Configures the Predefined Class as a Spring Bean.
+
+15.Can @Bean Annotation be mentioned in any Java Class?
+
+Ans : No.They need to mentioned only in Configuration Class.
+
+16.What is the Thumb Rule to Develop Standalone Spring Boot App?
+
+Ans :	Rule - 1 : Configure User-Defined Classes as Spring Beans using Stereotype Annotations.
+	
+	Rule - 2 : Configure Pre-Defined Classes as Spring Beans using @Beans methods of
+	@SpringBootApplication class only when they are not coming through Auto-Configuration.
+
+	Rule - 3 : Provide inputs to AutoConfiguration Process using application.properties/yml file.
+
+	Rule - 4 : Get IOC Container from SpringApplication.run() method and Complete Client Application.
