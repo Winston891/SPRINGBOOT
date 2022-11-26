@@ -1,0 +1,50 @@
+1.What is Spring boot?
+
+Ans : --> It is an approach of Developing Spring Based Apps.
+
+      --> It is a Module in Spring Framework.
+
+2.Mention the Approaches to Develop of Spring Apps?
+
+Ans :	1.Using XML Configurations
+
+	2.Using Annotation Driven Configurations
+
+	3.Using Code Driven Configurations
+
+	4.Using Spring Boot
+
+3.Mention some critical differences between Spring and Spring boot?
+
+Ans : 1.Spring boot doesn't use XML Configurations
+
+      2.Spring boot Provides Auto Configurations
+
+4.What are Auto-Configurations in Spring Boot?
+
+Ans : Auto-Configuration is a feature which generates Common things required in Spring boot 
+      Project dynamically.
+
+5.Mention some of the Auto-Configurations provided by Spring boot?
+
+Ans : 
+
+	1.Java Class as Spring Bean
+
+	2.Pre-Defined Jars
+
+	3.DB Connectivity
+
+	4.Servers
+
+	5.In-Memory DB Software
+
+	6.Plugins and etc...
+
+6.What will be the impact of Developing Spring Apps using Spring boot Approach?
+
+Ans : 
+
+	1.Simplification in App Development
+
+	2.Improvement in Productivity
