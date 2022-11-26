@@ -1,0 +1,77 @@
+1.What do you mean by Spring boot Starter?
+
+Ans : They are Advanced Dependencies (Jar Files) which 
+
+	1.Provides Libraries required for Spring Boot Project
+
+	2.Helps Spring Boot to perform Auto-Configuration Activities
+
+2.Where are Spring Boot Starters added?
+
+Ans : They are added in Class-Path
+
+3.Via which the Spring Boot Starters Added?
+
+Ans :	1. pom.xml --> If Maven is used
+
+	2. build.gradle --> If Gradle is used
+
+4.Mention the Name Pattern of Spring Boot?
+
+Ans : Pattern : spring-boot-starter-*
+
+	where '*' can be jdbc,web,devtools,data-jpa,data-test,etc......
+
+5.What do you mean by Dependent Jar File?
+
+Ans : If a class files of jar file 'A' uses class files of jar file 'B',then Jar File 'B' 
+      is said to be Dependent Jar File.
+
+6.Provide an Example related to Dependent Jar File?
+
+Ans : 'spring-context-support-<ver>.jar' file has multiple Dependent Jar Files like
+
+	1.'spring-core-<ver>.jar' file
+
+	2.'spring-beans-<ver>.jar' file
+
+	3.'commons-logging.jar' file
+
+7.What do you mean by Main Jar File?
+
+Ans : A Jar File which uses another Jar File is said to be Main Jar File.
+
+8.Should Main Jar Files and Dependent Jar Files needs to be added in Classpath?
+
+Ans : Yes.
+
+9.Can we easily identify Dependent Jar Files for the Main Jar Files?
+
+Ans : No.It is a complex process.
+
+10.How can we simplify the process of Identifying Dependent Jar Files for Main Jar Files?
+
+Ans : We need to use Build tools like Maven,Gradle,etc..
+
+11.How Build Tools simplifies the process of Identifying Dependent Jar Files for Main Jar Files?
+
+Ans : If we add Main Jar Files then these build tools recognizes Dependent Jar Files and downloads
+them.
+
+12.Are Spring Boot Starters are just Main and Dependent Jar Files? 
+
+Ans : No.They include Relevant Jar Files which are related to Main and Dependent Jar Files.
+
+	Example : 
+
+		spring-boot-starter-JDBC gives
+
+			1.Spring JDBC jars 
+			
+				--> spring-jdbc-<ver>.jar file [Main Jar File]
+				
+				--> spring-tx-<ver>.jar file [Dependent Jar File]
+
+			2.Hikari CP [Default Data Source in Spring boot App]
+
+			3.Relevant Logging jars and etc..
